@@ -6,7 +6,7 @@
 // @author       vncsmnl
 // @match        https://www.amazon.com/*
 // @match        https://www.amazon.com.br/*
-// @match        https://www.amazon.*/*
+// @match        https://www.amazon.tld/*
 // @grant        GM_registerMenuCommand
 // @updateURL    https://raw.githubusercontent.com/vncsmnl/userscripts/main/amazon/amazon.user.js
 // @downloadURL  https://raw.githubusercontent.com/vncsmnl/userscripts/main/amazon/amazon.user.js
