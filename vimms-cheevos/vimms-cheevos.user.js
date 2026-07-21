@@ -299,6 +299,33 @@
         return match ? match[1].trim() : null;
     }
 
+    function compareVersions(leftVersion, rightVersion) {
+        const leftParts = String(leftVersion || "")
+            .trim()
+            .split(".")
+            .map(function (part) {
+                return Number(part) || 0;
+            });
+        const rightParts = String(rightVersion || "")
+            .trim()
+            .split(".")
+            .map(function (part) {
+                return Number(part) || 0;
+            });
+
+        const partCount = Math.max(leftParts.length, rightParts.length);
+        for (let index = 0; index < partCount; index += 1) {
+            const leftPart = leftParts[index] || 0;
+            const rightPart = rightParts[index] || 0;
+
+            if (leftPart !== rightPart) {
+                return leftPart - rightPart;
+            }
+        }
+
+        return 0;
+    }
+
     async function requestText(url) {
         const response = await gmHttpRequest({
             method: "GET",
@@ -373,7 +400,7 @@
     }
 
     function buildUpdateBanner(latestVersion) {
-        if (!latestVersion || latestVersion === SCRIPT_VERSION) {
+        if (!latestVersion || compareVersions(latestVersion, SCRIPT_VERSION) <= 0) {
             return null;
         }
 
