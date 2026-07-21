@@ -8,6 +8,8 @@
 // @match        https://www.amazon.com.br/*
 // @match        https://www.amazon.*/*
 // @grant        GM_registerMenuCommand
+// @updateURL    https://raw.githubusercontent.com/vncsmnl/userscripts/main/amazon/amazon.user.js
+// @downloadURL  https://raw.githubusercontent.com/vncsmnl/userscripts/main/amazon/amazon.user.js
 // ==/UserScript==
 
 (function () {
@@ -46,8 +48,8 @@
         window.open(url, "_blank");
     }
 
-    // Violentmonkey menu
-    GM_registerMenuCommand("Search on Z-Lib", searchZLib);
-    GM_registerMenuCommand("Search on Anna’s Archive", searchAnnas);
-
+    if (typeof GM_registerMenuCommand === "function") {
+        GM_registerMenuCommand("Search on Z-Lib", searchZLib);
+        GM_registerMenuCommand("Search on Anna’s Archive", searchAnnas);
+    }
 })();

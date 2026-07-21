@@ -7,8 +7,8 @@
 // @author       vncsmnl
 // @match        https://www.youtube.com/watch*
 // @grant        GM_registerMenuCommand
-// @downloadURL https://update.greasyfork.org/scripts/537130/YouTube%20-%20Download%20Thumbnail.user.js
-// @updateURL https://update.greasyfork.org/scripts/537130/YouTube%20-%20Download%20Thumbnail.meta.js
+// @updateURL    https://raw.githubusercontent.com/vncsmnl/userscripts/main/youtube/youtube.thumbnail.user.js
+// @downloadURL  https://raw.githubusercontent.com/vncsmnl/userscripts/main/youtube/youtube.thumbnail.user.js
 // ==/UserScript==
 
 (function () {

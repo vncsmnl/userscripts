@@ -8,14 +8,20 @@
 // @match        *://*/*
 // @grant        GM_registerMenuCommand
 // @grant        GM_openInTab
-// @downloadURL https://update.greasyfork.org/scripts/545501/Bypass%20Paywall%20Skip.user.js
-// @updateURL https://update.greasyfork.org/scripts/545501/Bypass%20Paywall%20Skip.meta.js
+// @updateURL    https://raw.githubusercontent.com/vncsmnl/userscripts/main/paywall/paywall.user.js
+// @downloadURL  https://raw.githubusercontent.com/vncsmnl/userscripts/main/paywall/paywall.user.js
 // ==/UserScript==
 
-GM_registerMenuCommand("Replace Current Tab", () => {
-    window.location.href = 'https://www.paywallskip.com/article?url=' + encodeURIComponent(window.location.href);
-}, "u");
+(function () {
+    'use strict';
 
-GM_registerMenuCommand("New Tab", () => {
-    GM_openInTab('https://www.paywallskip.com/article?url=' + encodeURIComponent(window.location.href), { active: true });
-});
+    if (typeof GM_registerMenuCommand === "function") {
+        GM_registerMenuCommand("Replace Current Tab", () => {
+            window.location.href = 'https://www.paywallskip.com/article?url=' + encodeURIComponent(window.location.href);
+        }, "u");
+
+        GM_registerMenuCommand("New Tab", () => {
+            GM_openInTab('https://www.paywallskip.com/article?url=' + encodeURIComponent(window.location.href), { active: true });
+        });
+    }
+})();
