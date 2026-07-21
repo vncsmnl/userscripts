@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube - Download Thumbnail
 // @namespace    https://greasyfork.org/en/scripts/537130-youtube-download-thumbnail
-// @version      1.2
+// @version      1.3
 // @license MIT
 // @description  YouTube Thumbnail Downloader
 // @author       vncsmnl
