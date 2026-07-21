@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vimm's Cheevos
 // @namespace    https://github.com/vncsmnl/vimms-cheevos
-// @version      1.0.5
+// @version      1.0.6
 // @description  Validates Vimm's Lair game files against RetroAchievements supported hashes.
 // @author       vncsmnl
 // @license      MIT
@@ -20,7 +20,7 @@
     "use strict";
 
     const SCRIPT_NAME = "Vimm's Cheevos";
-    const SCRIPT_VERSION = "1.0.5";
+    const SCRIPT_VERSION = "1.0.6";
     const UPDATE_CHECK_INTERVAL_MS = 6 * 60 * 60 * 1000;
 
     const REPO_OWNER = "vncsmnl";
@@ -354,7 +354,7 @@
             const sourceText = await requestText(RAW_FILE_URL + "?_=" + now);
             const latestVersion = parseVersionFromUserscriptHeader(sourceText);
 
-            if (latestVersion) {
+            if (latestVersion && compareVersions(latestVersion, SCRIPT_VERSION) > 0) {
                 storageSet(STORAGE_KEYS.latestVersion, latestVersion);
             }
         } catch {
@@ -561,7 +561,7 @@
 
         const latestVersion = String(storageGet(STORAGE_KEYS.latestVersion, "") || "");
         const sidebarTitle =
-            latestVersion === SCRIPT_VERSION
+            compareVersions(latestVersion, SCRIPT_VERSION) <= 0
                 ? SCRIPT_NAME
                 : SCRIPT_NAME + " (Update available!)";
 
