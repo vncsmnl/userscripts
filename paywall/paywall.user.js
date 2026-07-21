@@ -4,6 +4,8 @@
 // @version      1.0.1
 // @description  Adds a context menu option to bypass an article's paywall.
 // @author       vncsmnl
+// @homepage     https://github.com/vncsmnl/userscripts
+// @supportURL   https://github.com/vncsmnl/userscripts/issues
 // @license      MIT
 // @match        *://*/*
 // @grant        GM_registerMenuCommand

@@ -5,6 +5,8 @@
 // @license MIT
 // @description  YouTube Thumbnail Downloader
 // @author       vncsmnl
+// @homepage     https://github.com/vncsmnl/userscripts
+// @supportURL   https://github.com/vncsmnl/userscripts/issues
 // @match        https://www.youtube.com/watch*
 // @grant        GM_registerMenuCommand
 // @updateURL    https://raw.githubusercontent.com/vncsmnl/userscripts/main/youtube/youtube.thumbnail.user.js

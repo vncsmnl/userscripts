@@ -5,6 +5,8 @@
 // @description  Validates Vimm's Lair game files against RetroAchievements supported hashes.
 // @author       vncsmnl
 // @license      MIT
+// @homepage     https://github.com/vncsmnl/userscripts
+// @supportURL   https://github.com/vncsmnl/userscripts/issues
 // @match        *://vimm.net/*
 // @run-at       document-end
 // @grant        GM_getValue

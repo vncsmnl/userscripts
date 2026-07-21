@@ -4,6 +4,8 @@
 // @version      1.2
 // @description  Adds a menu to search the Amazon book title on Z-Lib and Anna’s Archive
 // @author       vncsmnl
+// @homepage     https://github.com/vncsmnl/userscripts
+// @supportURL   https://github.com/vncsmnl/userscripts/issues
 // @match        https://www.amazon.com/*
 // @match        https://www.amazon.com.br/*
 // @match        https://www.amazon.tld/*
