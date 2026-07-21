@@ -22,7 +22,7 @@
     "use strict";
 
     const SCRIPT_NAME = "Vimm's Cheevos";
-    const SCRIPT_VERSION = "1.0.6";
+    const SCRIPT_VERSION = "1.0.7";
     const UPDATE_CHECK_INTERVAL_MS = 6 * 60 * 60 * 1000;
 
     const REPO_OWNER = "vncsmnl";
