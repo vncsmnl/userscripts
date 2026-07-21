@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Amazon → Z-Lib & Anna Archive Menu Search
 // @namespace    vncsmnl.books
-// @version      1.2
+// @version      1.3
 // @description  Adds a menu to search the Amazon book title on Z-Lib and Anna’s Archive
 // @author       vncsmnl
 // @homepage     https://github.com/vncsmnl/userscripts

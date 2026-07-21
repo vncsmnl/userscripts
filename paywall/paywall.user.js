@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bypass Paywall Skip
 // @namespace    vncsmnl.paywallskip
-// @version      1.0.1
+// @version      1.0.2
 // @description  Adds a context menu option to bypass an article's paywall.
 // @author       vncsmnl
 // @homepage     https://github.com/vncsmnl/userscripts

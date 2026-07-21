@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vimm's Cheevos
 // @namespace    https://github.com/vncsmnl/vimms-cheevos
-// @version      1.0.6
+// @version      1.0.7
 // @description  Validates Vimm's Lair game files against RetroAchievements supported hashes.
 // @author       vncsmnl
 // @license      MIT
